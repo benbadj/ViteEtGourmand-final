@@ -12,9 +12,9 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-primary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">Vite ET gOURMAND</a>
+                <a class="navbar-brand" href="/">Vite et Gourmand</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,7 +29,10 @@
                         <a class="nav-link" href="#">reservation</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">connexion</a>
+                        <a class="nav-link" href="#">Mon compte</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Connexion/Deconnection</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="#">contact</a>
@@ -44,7 +47,41 @@
         <!-- le conteu de la page sera injectée ici-->
     </main>
 
-    <footer> ceci est le footer de ma page</footer>
+    <footer>
+        <div class="bg-secondary text-center ">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Nos Horraires</h3>
+                    <p>Mardi: 12h - 14h, 19h - 22h<br /> 
+                        mercredi: 12h - 14h, 19h - 22h<br /> 
+                        jeudi: 12h - 14h, 19h - 22h<br /> 
+                        vendredi: 12h - 14h, 19h - 22h<br /> 
+                        samedi: 12h - 14h, 19h - 22h<br /> 
+                        dimanche: 12h - 14h, 19h - 22h<br />
+                        lundi: fermé
+                    </p>
+                </div>
+                <div class="col-6">
+                    <h3>Contacts</h3>
+                    <p >Adresse: 123 Rue de Bordeaux, 33000 Bordeaux<br />
+                        Téléphone: +33 5 12 34 56 78<br />
+                        Email: info@viteetgourmand.fr
+                    </p>
+                </div> 
+                <div class="col-12 text-black justify-content-end">
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href="" ><i class="bi bi-instagram"></i></a>
+                    <a href="" ><i class="bi bi-twitter-x"></i></a>
+                    </p>
+                </div> 
+                <div class="col-12 text-black">
+                    <a href="" >Mentions Légales</a>
+                    <a href="" >Conditions Générales de Vente</a>
+                    <p>&copy; 2024 Vite et Gourmand. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script type="module" src="Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
