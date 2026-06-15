@@ -1,0 +1,20 @@
+<div class="login__container">
+    <h1 class="login__title">Inscription</h1>
+    <form action="signup" method="post" class="login__form">
+        <input type="text" placeholder="Votre nom" class="login__input"/>
+        <input type="text" placeholder="Votre prénom" class="login__input"/>
+        <input type="email" placeholder="Votre email" class="login__input"/>
+        <input type="phone" placeholder="Votre numéro de téléphone" class="login__input"/>
+        <input type="text" placeholder="Votre adresse" class="login__input"/>
+        <input type="text" placeholder="code postale" class="login__input"/>
+        <input type="text" placeholder="votre ville" class="login__input"/>
+        <input type="password" placeholder="Votre mot de passe" class="login__input"/>
+        <p class="login__imput-text">Votre mot de passe doit contenir au moins 8 caractères, inclure une majuscule, une minuscule et un chiffre.</p>
+        <input type="password" placeholder="Confirmer votre mot de passe" class="login__input"/>
+        
+        <button type="submit" class="login__button">S'inscrire</button>
+    </form>
+    <div class="login__links">
+        <a href="../Pages/auth.html" class="dropdown__link-signin">Vous avez un compte ? </a>
+    </div>
+</div>
