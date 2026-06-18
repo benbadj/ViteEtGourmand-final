@@ -12005,6 +12005,23 @@ p {
   padding: 10px;
 }
 
+label {
+  color: inherit;
+  font-size: 14px;
+  margin-bottom: 5px;
+  opacity: 0.7;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid var(--primary-color);
+  border-radius: 30px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .nav-link, .navbar-brand {
   color: #ffffd7;
   transition: all 0.3s ease;
@@ -12039,7 +12056,8 @@ p {
   bottom: 0;
   padding: 20px;
 }
-.hero__scene .btn {
+
+.btn {
   background-color: #add981;
   color: #ffffff;
   padding: 10px 20px;
@@ -12049,26 +12067,31 @@ p {
   font-size: 16px;
   transition: all 0.3s ease;
 }
-.hero__scene .btn:hover {
+
+.btn:hover {
   opacity: 0.5;
 }
-.hero__scene .button {
+
+.button {
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
 }
-.container .main__container {
+
+.main__container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
 }
-.container .main__container-text {
+
+.main__container-text {
   color: #add981;
   text-align: center;
 }
@@ -12171,8 +12194,10 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  bottom: 20px;
 }
-.post .avisclients {
+
+.avisclients {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -12182,6 +12207,68 @@ p {
   border-radius: 60px;
   text-align: center;
 }
-.post .avisclients .about__us {
-  font-size: 12px;
+
+.about__us {
+  font-size: 14px;
+  text-align: center;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  width: 100%;
+  font-size: 36px;
+  margin-top: 80px;
+}
+
+.hero__content-text {
+  color: #ffffd7;
+  text-align: center;
+}
+
+.hero__content p {
+  color: #ffffd7;
+  font-size: 30px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffd7;
+  border: solid 1px #add981;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact__input {
+  padding: 10px;
+  border: solid 1px #add981;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  max-width: 400px;
 }/*# sourceMappingURL=main.css.map */
