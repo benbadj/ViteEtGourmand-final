@@ -12066,9 +12066,26 @@ select {
   cursor: pointer;
   font-size: 16px;
   transition: all 0.3s ease;
+  max-width: 300px;
 }
 
 .btn:hover {
+  opacity: 0.5;
+  background-color: #add981;
+}
+
+.btn-red {
+  background-color: red;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-red:hover {
   opacity: 0.5;
 }
 
@@ -12271,4 +12288,20 @@ select {
   flex-direction: column;
   margin-bottom: 15px;
   max-width: 400px;
+}
+
+.action__image-btn {
+  position: absolue;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.allreservations a {
+  display: block;
+  color: #000000;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */

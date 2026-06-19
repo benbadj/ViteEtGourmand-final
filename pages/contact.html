@@ -1,103 +1,38 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../scss/main.css">
-    <title>Document</title>
-</head>
-<body>
-    <header class="hero__scene">
-        <nav class="navbar navbar-expand-lg p-1">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/">Vite et Gourmand</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="/pages/main.html">menu</a>
-                        <li class="nav-item">
-                        <a class="nav-link" href="/pages/reservation.html">reservation</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="/pages/mon compte.html">Mon compte</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="/pages/auth.html">Connexion</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="/pages/contact.html">contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container col-12">
-        <div class="main__container">
-            <h1 class="main__container-text">Contactez-nous</h1>
-            <p class="about__us">Vous avez des questions, des commentaires ou souhaitez simplement en savoir plus sur Vite et Gourmand ? N'hésitez pas à nous contacter ! Nous sommes là pour vous aider.</p>   
-        </div>
-        <form action="" method="post" class="contact__form">
-            <input type="text" placeholder="Votre nom" class="contact__input">
-            <input type="email" placeholder="Votre email" class="contact__input">
-            <input type="tel" placeholder="votre numero de téléphone" class="contact__input">
-            <div class="form__group">
-                <label for="statut">Vous êtes <span class="required"></span></label>
-                <select name="statut" id="statut" required>
-                    <option value="disabled selected">Vueillez selectionner</option>
-                    <option value="agence">une agence</option>
-                    <option value="entreprise">une entreprise</option>
-                    <option value="restaurateur">un restaurateur privé</option>
-                    <option value="weeding planner">organisateur d'évenement</option>
-                    <option value="consultant">à votre compte</option>
-                </select>
-            </div>
-            <input type="text" placeholder="Nom de votre entreprise" class="contact__input">
-            <input type="number" placeholder="Code postale" class="contact__input">
-            <textarea placeholder="Votre message" class="contact__input"></textarea>
-            <button type="submit" class="btn">Envoyer</button>
-        </form>
+
+<div class="container col-12">
+    <div class="main__container">
+        <h1 class="main__container-text">Contactez-nous</h1>
+        <p class="about__us">Vous avez des questions, des commentaires ou souhaitez simplement en savoir plus sur Vite et Gourmand ? N'hésitez pas à nous contacter ! Nous sommes là pour vous aider.</p>   
     </div>
-    <footer>
-        <div class="bg-secondary text-center">
-            <div class="row justify-content-between">
-                <div class="col-6 col-md-3">
-                    <h3>Nos Horraires</h3>
-                    <p>Mardi: 12h - 14h, 19h - 22h<br /> 
-                        mercredi: 12h - 14h, 19h - 22h<br /> 
-                        jeudi: 12h - 14h, 19h - 22h<br /> 
-                        vendredi: 12h - 14h, 19h - 22h<br /> 
-                        samedi: 12h - 14h, 19h - 22h<br /> 
-                        dimanche: 12h - 14h, 19h - 22h<br />
-                        lundi: fermé
-                    </p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h3>Contacts</h3>
-                    <p >Adresse: 123 Rue de Bordeaux, 33000 Bordeaux<br />
-                        Téléphone: +33 5 12 34 56 78<br />
-                        Email: info@viteetgourmand.fr
-                    </p>
-                </div> 
-                <div class="col-12 justify-content-end">
-                    <a href="" class="text-black"><i class="bi bi-facebook"></i></a>
-                    <a href="" class="text-black"><i class="bi bi-instagram"></i></a>
-                    <a href="" class="text-black"><i class="bi bi-twitter-x"></i></a>
-                    </p>
-                </div> 
-                <div class="col-12 text-$black">
-                    <a href="" >Mentions Légales</a>
-                    <a href="" >Conditions Générales de Vente</a>
-                    <p>&copy; 2024 Vite et Gourmand. Tous droits réservés.</p>
-                </div>
-            </div>
+    <form action="" method="post" class="contact__form">
+        <div class="mb-3">
+            <label for="NomInput" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="John" name="Nom"> 
         </div>
-    </footer>
-</body>
+        <div class="mb-3">
+            <label for="PrenomInput" class="form-label">Prénom</label>
+            <input type="text" class="form-control id="PrenomInput" placeholder="Votre prénom" value="Doe" name="Prenom"> 
+        </div>
+        <div class="form__group">
+            <label for="statut">Vous êtes <span class="required"></span></label>
+            <select name="statut" id="statut" required>
+                <option value="disabled selected">Vueillez selectionner</option>
+                <option value="agence">une agence</option>
+                <option value="entreprise">une entreprise</option>
+                <option value="restaurateur">un restaurateur privé</option>
+                <option value="weeding planner">organisateur d'évenement</option>
+                <option value="consultant">à votre compte</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="NomInput" class="form-label">NomEntreprise</label>
+            <input type="text" class="form-control" id="NomInput" placeholder="Nom de votre entreprise"> 
+        </div>
+        <div class="mb-3">
+            <label for="Number" class="form-label">Code postale</label>
+            <input type="texte" class="form-control" id="numberInput" placeholder="code postale"> 
+        </div>
+        <textarea placeholder="Votre message" class="form-control"></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+    </form>
+</div>
