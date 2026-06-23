@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
       //si on a bien cliqué sur le lien de menu
       if (link) {
           even.preventDefault();
-      //on recupere la cible du lien (ex:pafe/main.html)
+      //on recupere la cible du lien (ex:page/main.html)
       let pageUrl = link.getAttribute("href");
       //si c'est le lien home"/", on le redirige vers notre page d'accueil réelle
       if (pageUrl === "/" || pageUrl === ""){
