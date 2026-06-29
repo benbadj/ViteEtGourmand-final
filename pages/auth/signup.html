@@ -5,26 +5,44 @@
     <form class="contact__form">
         <div class="mb-3">
             <label for="NomInput" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" name="Nom"> 
+            <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" name="Nom">
+            <div class="invalid-feedback">
+            votre Nom n'est pas dans le bon format
+            </div>  
         </div>
         <div class="mb-3">
             <label for="PrenomInput" class="form-label">Prénom</label>
-            <input type="text" class="form-control id="PrenomInput" placeholder="Votre prénom" name="Prenom"> 
+            <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" name="Prenom">
+            <div class="invalid-feedback">
+            votre Prenom n'est pas au bon format
+            </div>  
         </div>
         <div class="mb-3">
           <label for="EmailInput" class="form-label">Email</label>
-          <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email"> 
+          <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email">
+          <div class="invalid-feedback">
+            votre mail n'est pas dans le bon format
+          </div> 
         </div>
         <div class="mb-3">
           <label for="PasswordInput" class="form-label">Mot de passe</label>
-          <input type="password" class="form-control id="PasswordInput" name="Password">
+          <input type="password" class="form-control" id="PasswordInput" name="Password">
+          <div class="invalid-feedback">
+            votre mot de pass doit contenir plus de 8 caractères, comprenant aumoins une lettre en Majuscule, 1 caractère spécial et 1 chiffre!
+          </div>
+          <div class="valid-feedback">
+            votre mot de pass est Robuste
+          </div>
         </div>
         <div class="mb-3">
-            <label for="ValidatePasswordInput" class="form-label">Validez votre mot de passe</label>
+            <label for="ValidatePasswordInput" class="form-label">Confirmez votre mot de passe</label>
             <input type="password" class="form-control" id="ValidatePasswordInput" name="PasswordConfirm">
-          </div>
+            <div class="invalid-feedback">
+            votre mot de passe n'est pas valide
+            </div>
+        </div>
         <div class="text-center">
-            <button type="submit" class="btn">Inscription</button>
+            <button type="submit" class="btn" id="btn__ValidationInscription">Inscription</button>
         </div>
     </form>
     <div class="text-center pt-3">

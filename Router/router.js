@@ -19,12 +19,13 @@ document.addEventListener("DOMContentLoaded", function() {
       console.error(error);
       appContainer.innerHTML = '<h2>Erreur 404</h2><p>Désolé, impossible de chargé la page.</p>';
     }
-    
+    //afficher et masquer les élements en fonction du role
+    showAndHideElementsForRoles();
   }
   //2.on écoute tous les clics sur tous les liens du menu
     document.addEventListener("click", function(event) {
       //on cherche si l'élément cliqué ou son parent est un lien avec la class .nav-link
-      const link = even.target.closest(".nav-link");
+      const link = event.target.closest(".nav-link");
       //si on a bien cliqué sur le lien de menu
       if (link) {
           even.preventDefault();
