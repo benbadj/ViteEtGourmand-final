@@ -1,5 +1,5 @@
-const emailImput = document.getElementById("imputEmail");
-const passwordImput = document.getElementById("imputPassword");
+const emailInput = document.getElementById("inputEmail");
+const passwordInput = document.getElementById("inputPassword");
 
 const btnSignin = document.getElementById("btnSignin");
 
@@ -8,7 +8,7 @@ const btnSignin = document.getElementById("btnSignin");
 // on fait appel a l'API (base de donnée) pour verifier les credentials (permet de vérifier le mail et le password de l'utilisateur)
 
 function checkCredentials() {
-    if(mailImput.value == "test@gmail.com" && passwordImput.value == "123"){
+    if(emailInput.value == "test@gmail.com" && passwordInput.value == "123"){
 
         //recuparation du vrai token
         const token = "qsdfghjklmpoiuytreza";
@@ -18,8 +18,8 @@ function checkCredentials() {
         window.location.replace("/");
     }
     else{
-        mailImput.classList.add("is-valid");
-        passwordImput.classList.add("is-invalid");
+        emailInput.classList.add("is-valid");
+        passwordInput.classList.add("is-invalid");
     }
 }
 //methode pour les cookies

@@ -5,12 +5,12 @@ export const allRoutes = [
     new Route("/", "Accueil", "/pages/home.html", []),
     new Route("/main", "menu", "/pages/main.html", [], "/js/main.js"),
     new Route("/contact", "contact", "/pages/contact.html", ["disconnected"], "/js/contact.js"),
-    new Route("/moncompte", "moncompte", "/pages/moncompte.html", ["client", "admin"]),
+    new Route("/moncompte", "moncompte", "/pages/moncompte.html", ["client", "admin"], "/js/moncompte.js"),
     new Route("/signin", "connexion", "/pages/auth/signin.html", ["disconnected"], "/js/auth/signin.js"),
     new Route("/signup", "Inscription", "/pages/auth/signup.html", ["disconnected"], "/js/auth/signup.js"),
-    new Route("/editpassword", "editpassword", "/pages/auth/editpassword.html", ["client", "admin"]),
-    new Route("/allsreservations", "allresrvations", "/pages/reservations/allsreservations.html", ["client"]),
-    new Route("/reserver", "reserver", "/pages/reservations/reserver.html", ["client"]),
+    new Route("/editpassword", "editpassword", "/pages/auth/editpassword.html", ["client", "admin"], "/js/auth/editpassword.js"),
+    new Route("/allsreservations", "allresrvations", "/pages/reservations/allsreservations.html", ["client"], "/js/reservations/allsreservations.js"),
+    new Route("/reserver", "reserver", "/pages/reservations/reserver.html", ["client"], "/js/reservations/reserver.js"),
     new Route("/404", "404", "/pages/404.html", []),
 ];
 

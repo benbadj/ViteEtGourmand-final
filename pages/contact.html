@@ -7,32 +7,27 @@
     <form action="" method="post" class="contact__form">
         <div class="mb-3">
             <label for="NomInput" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="John" name="Nom"> 
+            <input type="text" class="form-control" id="nomImput" placeholder="Votre nom" value="John" name="Nom"> 
         </div>
         <div class="mb-3">
             <label for="PrenomInput" class="form-label">Prénom</label>
-            <input type="text" class="form-control id="PrenomInput" placeholder="Votre prénom" value="Doe" name="Prenom"> 
-        </div>
-        <div class="form__group">
-            <label for="statut">Vous êtes <span class="required"></span></label>
-            <select name="statut" id="statut" required>
-                <option value="disabled selected">Vueillez selectionner</option>
-                <option value="agence">une agence</option>
-                <option value="entreprise">une entreprise</option>
-                <option value="restaurateur">un restaurateur privé</option>
-                <option value="weeding planner">organisateur d'évenement</option>
-                <option value="consultant">à votre compte</option>
-            </select>
+            <input type="text" class="form-control" id="prenomImput" placeholder="Votre prénom" value="Doe" name="Prenom"> 
         </div>
         <div class="mb-3">
-            <label for="NomInput" class="form-label">NomEntreprise</label>
-            <input type="text" class="form-control" id="NomInput" placeholder="Nom de votre entreprise"> 
+          <label for="EmailImput" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailImput" placeholder="test@mail.fr" name="Email">
+          <div class="invalid-feedback">
+            votre mail n'est pas dans le bon format
+          </div> 
         </div>
         <div class="mb-3">
-            <label for="Number" class="form-label">Code postale</label>
-            <input type="texte" class="form-control" id="numberInput" placeholder="code postale"> 
+          <label for="NumberImput" class="form-label">Numero de telephone</label>
+          <input type="email" class="form-control" id="numberImput" placeholder="00 00 00 00 00" name="numero de téléphone">
+          <div class="invalid-feedback">
+            taper sans l'indictaif
+          </div> 
         </div>
-        <textarea placeholder="Votre message" class="form-control"></textarea>
-        <button type="submit" class="btn">Envoyer</button>
+        <textarea placeholder="Votre message" id="postImput" class="form-control"></textarea>
+        <button type="submit" class="btn" id="btn-validation">Envoyer</button>
     </form>
 </div>

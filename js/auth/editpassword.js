@@ -1,37 +1,31 @@
-const inputNom = document.getElementById("nomInput");
-const inputPrenom = document.getElementById("prenomInput")
-const inputEmail = document.getElementById("emailInputt");
+const inputEmail = document.getElementById("emailInput");
 const inputPassword = document.getElementById("passwordInput");
-const inputValidatePassword = document.getElementById("validatePasswordInput");
-const inputBtnValidation = document.getElementById("btn__ValidationInscription")
+const inputValidatePassword = document.getElementById("ValidatePasswordInput");
 
-nomInput.addEvenListerner("keyup", validateForm);
-prenomInput.addEvenListerner("keyup", validateForm);
+
 inputEmail.addEvenListerner("keyup", validateForm);
 inputPassword.addEvenListerner("keyup", validateForm);
 inputValidatePassword.addEvenListerner("keyup", validateForm);
 
 
-//ma function permettant de valider tous les formulaire
-function validateForm(){
-    const NomOk = validetaRequired(InputNom); // pour s'assurer que le nom est bien écrit d'ou la methode required
-    const PrenomOk = validetaRequired(inputPrenom); // pour s'assurer que le nom est bien écrit d'ou la methode required
-    const EmailOk = validateMail(inputEmail); //methode validateMail
-    const passwordOk = validatePassword(inputPassword);
-    const confirmpasswordOk = confirmationPassword(inputValidatePassword);
 
-    if(nomOk && prenomOk && mailOk &&passwordOk &&confirmpasswordOk){
-        btnValidation.disabled = false;
+function validateForm(){
+    const EmailOk = validateMail(inputEmail);
+    const passwordOk = imputValidatePassword(inputPassword);
+    const confirmpasswordOk = imputConfirmationPassword(inputValidatePassword);
+
+    if(mailOk &&passwordOk &&confirmpasswordOk){
+        btn.disabled = false;
     }
     else{
-        btnValidation.disabled = true;
+        btn.disabled = true;
     }
 }
 
-function validateMail(imput){
+function validateMail(input){
     //definir mon regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const mailUser = inputEmail.value;
+    const mailUser = imputEmail.value;
     if(mailUser.match(emailRegex)){
         input.classList.add("is-valid");
         input.classList.remove("is-invalid");
@@ -43,11 +37,10 @@ function validateMail(imput){
     }
 }
 
-//verification password
 function validatePassword(imput){
 
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,}$/;
-    const passwordUser = imputEmail.value;
+    const passwordUser = inputEmail.value;
     if(passwordUser.match(emailRegex)){
         input.classList.add("is-valid");
         input.classList.remove("is-invalid");
@@ -58,16 +51,13 @@ function validatePassword(imput){
         return false;
     }
 }
-
-//confirmation password
-function validateConfirmationPassword(inputPwd, InputConfirmPwd){
+function validateConfirmationPassword(inputPwd, inputConfirmPwd){
     
-    if(inputPwd.value == imputConfirmPwd){
+    if(inputPwd.value == inputConfirmPwd){
         inputConfirmPwd.classList.add("is-valid");
         inputConfirmPwd.classList.remove("is-invalid");
         return true;
-    }
-    else{
+    }else{
         inputConfirmPwd.classList.remove("is-valid");
         inputConfirmPwd.classList.add("is-invalid");
         return false;
@@ -75,13 +65,12 @@ function validateConfirmationPassword(inputPwd, InputConfirmPwd){
 }
     
 
-function validateRequired(input){
+function validateRequired(imput){
     if(input.value != ''){
         input.classList.add("is-valid");
         input.classList.remove("is-invalid");
         return true;
-    }
-    else{
+    }else{
         input.classList.remove("is-valid");
         input.classList.add("is-invalid");
         return false;

@@ -1,28 +1,10 @@
-//verifiaction que l'utilisateur a bien le droit d'acceder au contenu de la page avant de le charger grace à authorize
-const path = window.location.pathname
-const actualRoute = getRouteByUrl(path); //nrécuperation de l'url actuel
-const allRolesArray = actualRoute.authorize; // vérifier le droit d'accès à la page
-
-if(allRolesArray.length > 0){ // on fait le controle que si la taille de notre tableau est > 0 soit []
-  if(allRolesArray.includes("disconnected")){
-    if(isConnected()){
-      window.location.replace("/"); //ici ca veut dire lorsque l'utilisateur a le statut ["disconnecte"], on redirige
-    }
-  }
-  else{
-    const roleUser = getRole();
-    if(!allRolesArray.include(roleUser)){
-      Window.location.replace("/"); 
-    }
-  }
-}
-
-
 
 //1. on attend que le html initial soit soit completement chargé
 document.addEventListener("DOMContentLoaded", function() { 
   const appContainer = document.getElementById("main-page");
   const navLinks = document.querySelectorAll(".nav-link");
+
+  
   //fonction pour charger le contenu d'une page de manière assynchrome
   async function loadPage(url) {
     try {
